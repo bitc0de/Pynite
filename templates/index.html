@@ -1,0 +1,396 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<br><br>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <strong>Install and Update All Your Programs at Once<br></strong>
+        No toolbars. No clicking next. Just pick your apps and go.<br><br>
+        <img src="https://i.ibb.co/935tGr3/image.jpg" alt="image" border="0" class="img-thumbnail">
+
+    </div>
+    <div class="col"><br><br><br>
+      <strong>Quick programs installation<br></strong>
+Select the programs you want to install and click "Generate"<br><br>
+
+      <strong>About PyNite<br></strong>
+Utility created entirely in Python<br>
+      Based on the famous Ninite website.<br><br>
+
+         <strong>Created with...<br></strong>
+Python // Flask // Chocolatey <br>
+      Pending improvement.<br>
+
+    </div>
+  </div></div>
+<br><br>
+<div class="row">
+    <div class="col">
+        <center><h2><div class="alert alert-primary" role="alert">
+  1. Pick the apps you want
+</div></h2></center><br>
+    </div>
+</div>
+<form action="/" method="POST">
+<center><div class="row"><div class="col"></div>
+    <div class="col" style="text-align:left">
+        <h3>Web Browsers</h3>
+      <input class="form-check-input" type="checkbox" value="googlechrome" name="chrome">
+      <label class="form-check-label" for="defaultCheck1">
+      Google Chrome
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="opera" name="opera">
+      <label class="form-check-label" for="defaultCheck2">
+      Opera
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="firefox" name="firefox">
+      <label class="form-check-label" for="defaultCheck2">
+      Firefox
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="brave" name="brave">
+      <label class="form-check-label" for="defaultCheck1">
+      Brave
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="tor-browser" name="tor-browser">
+      <label class="form-check-label" for="defaultCheck2">
+      Tor Browser
+      </label><br><br>
+        <h3>File Sharing</h3>
+        <input class="form-check-input" type="checkbox" value="utorrent" name="utorrent">
+      <label class="form-check-label" for="defaultCheck2">
+      UTorrent
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="qbittorrent" name="qbittorrent">
+      <label class="form-check-label" for="defaultCheck2">
+      QBittorrent
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="transmission" name="transmission">
+      <label class="form-check-label" for="defaultCheck2">
+      Transmission
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="picotorrent" name="picotorrent">
+      <label class="form-check-label" for="defaultCheck2">
+      PicoTorrent
+      </label><br><br>
+        <h3>Compression</h3>
+        <input class="form-check-input" type="checkbox" value="winrar" name="winrar">
+      <label class="form-check-label" for="defaultCheck2">
+      Winrar
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="7zip" name="7zip">
+      <label class="form-check-label" for="defaultCheck2">
+      7zip
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="peazip" name="peazip">
+      <label class="form-check-label" for="defaultCheck2">
+      Peazip
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="freearc" name="freearc">
+      <label class="form-check-label" for="defaultCheck2">
+      Freearc
+      </label><br>
+    </div>
+
+    <div class="col" style="text-align:left">
+            <h3>Messaging</h3>
+            <input class="form-check-input" type="checkbox" value="zoom" name="zoom">
+      <label class="form-check-label" for="defaultCheck2">
+      Zoom
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="discord" name="discord">
+      <label class="form-check-label" for="defaultCheck2">
+      Discord
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="skype" name="skype">
+      <label class="form-check-label" for="defaultCheck2">
+      Skype
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="pidgin" name="pidgin">
+      <label class="form-check-label" for="defaultCheck2">
+      Pidgin
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="thunderbird" name="thunderbird">
+      <label class="form-check-label" for="defaultCheck2">
+      Thunderbird
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="whatsapp" name="whatsapp">
+      <label class="form-check-label" for="defaultCheck2">
+      Whatsapp
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="telegram" name="telegram">
+      <label class="form-check-label" for="defaultCheck2">
+      Telegram
+      </label><br><br>
+        <h3>Security</h3>
+        <input class="form-check-input" type="checkbox" value="malwarebytes" name="malwarebytes">
+      <label class="form-check-label" for="defaultCheck2">
+      Malwarebytes
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="avastfreeantivirus" name="avastfreeantivirus">
+      <label class="form-check-label" for="defaultCheck2">
+      Avast
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="avginternetsecurity" name="avginternetsecurity">
+      <label class="form-check-label" for="defaultCheck2">
+      AVG
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="spybot" name="spybot">
+      <label class="form-check-label" for="defaultCheck2">
+      Spybot
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="avirafreeantivirus" name="avirafreeantivirus">
+      <label class="form-check-label" for="defaultCheck2">
+      Avira
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="superantispyware" name="superantispyware">
+      <label class="form-check-label" for="defaultCheck2">
+      SuperAntiSpyware
+      </label><br>
+
+        </div>
+    <div class="col" style="text-align:left">
+            <h3>Developer Tools</h3>
+            <input class="form-check-input" type="checkbox" value="pyhon" name="pyhon">
+      <label class="form-check-label" for="defaultCheck2">
+      Python
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="filezilla" name="filezilla">
+      <label class="form-check-label" for="defaultCheck2">
+      Filezilla
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="notepadplusplus" name="notepadplusplus">
+      <label class="form-check-label" for="defaultCheck2">
+      Notepad++
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="jdk8" name="jdk8">
+      <label class="form-check-label" for="defaultCheck2">
+      Java SE 8
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="jdk11" name="jdk11">
+      <label class="form-check-label" for="defaultCheck2">
+      Java SE 11
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="winscp.portable" name="winscp.portable">
+      <label class="form-check-label" for="defaultCheck2">
+      WinSCP
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="putty" name="putty">
+      <label class="form-check-label" for="defaultCheck2">
+      Putty
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="winmerge" name="winmerge">
+      <label class="form-check-label" for="defaultCheck2">
+      WinMerge
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="eclipse" name="eclipse">
+      <label class="form-check-label" for="defaultCheck2">
+      Eclipse
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="vscode" name="vscode">
+      <label class="form-check-label" for="defaultCheck2">
+      Visual Studio Code
+      </label><br><br>
+         <h3>Documents</h3>
+          <input class="form-check-input" type="checkbox" value="adobereader" name="adobereader">
+      <label class="form-check-label" for="defaultCheck2">
+      Adobe Reader
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="nitroreader.install" name="nitroreader.install">
+      <label class="form-check-label" for="defaultCheck2">
+      Nitro Reader
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="sumatrapdf" name="sumatrapdf">
+      <label class="form-check-label" for="defaultCheck2">
+      SumatraPDF
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="openoffice" name="openoffice">
+      <label class="form-check-label" for="defaultCheck2">
+      Open Office
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="libreoffice-fresh" name="libreoffice-fresh">
+      <label class="form-check-label" for="defaultCheck2">
+      Libre Office
+      </label><br>
+        </div>
+
+    <div class="col" style="text-align:left">
+        <h3>Utilities</h3>
+        <input class="form-check-input" type="checkbox" value="teamviewer" name="teamviewer">
+      <label class="form-check-label" for="defaultCheck2">
+      TeamViewer 15
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="imgburn" name="imgburn">
+      <label class="form-check-label" for="defaultCheck2">
+      ImgBurn
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="realvnc" name="realvnc">
+      <label class="form-check-label" for="defaultCheck2">
+      RealVNC
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="teracopy" name="teracopy">
+      <label class="form-check-label" for="defaultCheck2">
+      Teracopy
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="revo-uninstaller" name="revo-uninstaller">
+      <label class="form-check-label" for="defaultCheck2">
+      Revo
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="launchy" name="launchy">
+      <label class="form-check-label" for="defaultCheck2">
+      Launchy
+      </label><br><br>
+        <h3>Media</h3>
+        <input class="form-check-input" type="checkbox" value="itunes" name="itunes">
+      <label class="form-check-label" for="defaultCheck2">
+      iTunes
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="vlc" name="vlc">
+      <label class="form-check-label" for="defaultCheck2">
+      VLC Media
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="aimp" name="aimp">
+      <label class="form-check-label" for="defaultCheck2">
+      AIMP
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="winamp" name="winamp">
+      <label class="form-check-label" for="defaultCheck2">
+      Winamp
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="musicbee" name="musicbee">
+      <label class="form-check-label" for="defaultCheck2">
+      MusicBee
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="audacity" name="audacity">
+      <label class="form-check-label" for="defaultCheck2">
+      Audacity
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="k-litecodecpackfull" name="k-litecodecpackfull">
+      <label class="form-check-label" for="defaultCheck2">
+      K-Lite
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="gom-player" name="gom-player">
+      <label class="form-check-label" for="defaultCheck2">
+      GOM Player
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="spotify" name="spotify">
+      <label class="form-check-label" for="defaultCheck2">
+      Spotify
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="cccp" name="cccp">
+      <label class="form-check-label" for="defaultCheck2">
+      CCCP
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="mediamonkey" name="mediamonkey">
+      <label class="form-check-label" for="defaultCheck2">
+      MediaMonkey
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="handbrake.portable" name="handbrake.portable">
+      <label class="form-check-label" for="defaultCheck2">
+      HandBrake
+      </label><br>
+        </div>
+
+    <div class="col" style="text-align:left">
+            <h3>Online Storage</h3>
+        <input class="form-check-input" type="checkbox" value="dropbox" name="dropbox">
+      <label class="form-check-label" for="defaultCheck2">
+      Dropbox
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="google-backup-and-sync" name="google-backup-and-sync">
+      <label class="form-check-label" for="defaultCheck2">
+      Google Backup and Sync
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="googledrive" name="googledrive">
+      <label class="form-check-label" for="defaultCheck2">
+      Google Drive
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="netdrive" name="netdrive">
+      <label class="form-check-label" for="defaultCheck2">
+      NetDrive
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="sugarsync" name="sugarsync">
+      <label class="form-check-label" for="defaultCheck2">
+      SugarSync
+      </label><br><br>
+        <h3>Imaging</h3>
+        <input class="form-check-input" type="checkbox" value="krita" name="krita">
+      <label class="form-check-label" for="defaultCheck2">
+      Krita
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="paint.net" name="paint.net">
+      <label class="form-check-label" for="defaultCheck2">
+      Paint.NET
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="gimp" name="gimp">
+      <label class="form-check-label" for="defaultCheck2">
+      GIMP
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="xnview" name="xnview">
+      <label class="form-check-label" for="defaultCheck2">
+      XnView
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="inkscape" name="inkscape">
+      <label class="form-check-label" for="defaultCheck2">
+      Inkscape
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="sharex" name="sharex">
+      <label class="form-check-label" for="defaultCheck2">
+      ShareX
+      </label><br>
+
+        </div>
+
+
+    <div class="col" style="text-align:left">
+        <h3>Other</h3>
+        <input class="form-check-input" type="checkbox" value="evernote" name="evernote">
+      <label class="form-check-label" for="defaultCheck2">
+      Evernote
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="googleearthpro" name="googleearthpro">
+      <label class="form-check-label" for="defaultCheck2">
+      Google Earth
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="keepass" name="keepass">
+      <label class="form-check-label" for="defaultCheck2">
+      KeePass
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="everything.portable" name="everything.portable">
+      <label class="form-check-label" for="defaultCheck2">
+      EveryThing
+      </label><br><br>
+         <h3>Games</h3>
+        <input class="form-check-input" type="checkbox" value="steam" name="steam">
+      <label class="form-check-label" for="defaultCheck2">
+      Steam
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="epicgameslauncher" name="epicgameslauncher">
+      <label class="form-check-label" for="defaultCheck2">
+      Epic Games
+      </label><br>
+        <input class="form-check-input" type="checkbox" value="battle.net" name="battle.net">
+      <label class="form-check-label" for="defaultCheck2">
+      Battle.net
+      </label><br>
+
+    </div><div class="col"></div>
+
+</div></center>
+
+
+<div class="row">
+    <div class="col"><br>
+        <center><h2><div class="alert alert-primary" role="alert">
+  2. Download and run your custom installer/updater
+</div></h2><br>
+          <button type="submit" class="btn btn-primary">Generate</button></center><br><br>
+
+    </div>
+</div>
+</form>
+
+{% endblock content %}
+

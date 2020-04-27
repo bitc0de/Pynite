@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="container"><br>
+  <div class="row">
+    <div class="col-sm">
+        <h2>1. Download</h2>
+        Press on download button.<br><br>
+        <h2>2. Run as administrator</h2>
+        Run PyNite.exe as Administrator<br><br>
+        <h2>3. Like the project</h2>
+        Can you give me a star on Github:
+        <a href="https://github.com/bitc0de/Pynite">Github</a>
+    </div>
+    <div class="col-sm"><br><br><br>
+      Press to download:
+<form action="/descargar/" method="post">
+    <button name="descargar" type="submit" class="btn btn-primary">Download</button>
+</form>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+{% endblock content %}
+
